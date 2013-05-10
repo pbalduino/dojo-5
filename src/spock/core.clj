@@ -10,20 +10,14 @@
 	})
 
 (defn jokenpo [jogador1 jogador2]
-	(let [ganhador (some
-										#(= jogador2 %)
-										((jogadas jogador1) :ganha))]
-		(cond
-			(and (= jogador2 jogador1)) :empate
-			ganhador :jogador1
-			:else 	 :jogador2)))
-
-;	(cond
-;		(and (= jogador2 jogador1))
-;	(if (some #(= jogador2 %) ((jogadas jogador1) :ganha))
-;		:jogador1
-;	)
-;	)
+	(if (and (= jogador2 jogador1))
+	; 			:empate
+	(cond
+		(and (= jogador2 jogador1))
+	(if (some #(= jogador2 %) ((jogadas jogador1) :ganha))
+		:jogador1
+	)
+	)
 	; (cond
 	; (and (= jogador2 jogador1))
 	; 		:empate
@@ -36,4 +30,4 @@
 	; (and (= jogador2 :papel) (= jogador1 :pedra))
 	; 	:jogador2
 	; )
-;)
+)
