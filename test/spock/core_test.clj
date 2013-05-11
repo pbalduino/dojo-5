@@ -5,11 +5,11 @@
 (deftest pedra-papel-tesoura-spock-lagarto
 
   (testing "Jogadas iguais causam empate"
-    (is(= (jokenpo :pedra   :pedra)   :empate ))
-    (is(= (jokenpo :tesoura :tesoura) :empate ))
-    (is(= (jokenpo :papel   :papel)   :empate ))
-    (is(= (jokenpo :spock   :spock)   :empate ))
-    (is(= (jokenpo :lagarto :lagarto) :empate )))
+    (is(= (jokenpo :pedra   :pedra)   :empate))
+    (is(= (jokenpo :tesoura :tesoura) :empate))
+    (is(= (jokenpo :papel   :papel)   :empate))
+    (is(= (jokenpo :spock   :spock)   :empate))
+    (is(= (jokenpo :lagarto :lagarto) :empate)))
 
   (testing "Tesoura corta papel"
     (is (= (jokenpo :tesoura :papel) :jogador1))
