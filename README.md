@@ -18,7 +18,7 @@ Participantes
 * Plínio Balduino
 * Alexandre Souza
 * Nicolas França
-* Pedro Nicolas
+* Pedro Nicholas
 
 
 Linguagem
