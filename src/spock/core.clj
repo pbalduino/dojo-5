@@ -1,13 +1,10 @@
 (ns spock.core)
 
 (def jogadas {
-								:tesoura {:ganha [:lagarto :papel]
-													:perde [:spock :pedra]
-													}
-								:papel {:ganha [:spock :pedra]
-												:perde [:tesoura :lagarto]
-												}
-	})
+  :tesoura {:ganha [:lagarto :papel]
+						:perde [:spock :pedra]}
+	:papel {:ganha [:spock :pedra]
+					:perde [:tesoura :lagarto]}})
 
 (defn jokenpo [jogador1 jogador2]
 	(if (and (= jogador2 jogador1))
